@@ -11,9 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="test-jacoco" target="1.5" />
-      <module name="test-math" target="1.5" />
-      <module name="test-string" target="1.5" />
+      <module name="test-jacoco" target="1.8" />
+      <module name="test-math" target="1.8" />
+      <module name="test-string" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
