@@ -6,7 +6,12 @@
 
     <groupId>test-jacoco</groupId>
     <artifactId>test-jacoco</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>test-math</module>
+        <module>test-string</module>
+    </modules>
 
     <properties>
         <jacoco.version>0.7.5.201505241946</jacoco.version>
@@ -113,7 +118,7 @@
                         <configuration>
                             <includes>
                                 <include>math.operation.*</include>
-                                <include>string.operation.*</include>
+                                <include>operation.*</include>
                             </includes>
                             <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
                             <propertyName>surefireArgLine</propertyName>
