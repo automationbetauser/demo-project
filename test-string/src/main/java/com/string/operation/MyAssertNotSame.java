@@ -2,7 +2,7 @@ package com.string.operation;
 
 import java.util.HashMap;
 import java.util.Map;
-//Test.
+//Test...
 public class MyAssertNotSame {
 
     public String getPropValue(final String key){
