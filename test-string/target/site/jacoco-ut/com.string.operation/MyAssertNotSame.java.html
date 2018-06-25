@@ -2,15 +2,16 @@
 
 import java.util.HashMap;
 import java.util.Map;
-
-<span class="nc" id="L6">public class MyAssertNotSame {</span>
+//Test..........
+<span class="fc" id="L6">public class MyAssertNotSame {</span>
 
     public String getPropValue(final String key){
-<span class="nc" id="L9">        Map&lt;String, String&gt; appProps = new HashMap&lt;String, String&gt;();</span>
-<span class="nc" id="L10">        appProps.put(&quot;key1&quot;, &quot;value 1&quot;);</span>
-<span class="nc" id="L11">        appProps.put(&quot;key2&quot;, &quot;value 2&quot;);</span>
-<span class="nc" id="L12">        appProps.put(&quot;key3&quot;, &quot;value 3&quot;);</span>
-<span class="nc" id="L13">        return appProps.get(key);</span>
+<span class="fc" id="L9">        Map&lt;String, String&gt; appProps = new HashMap&lt;String, String&gt;();</span>
+<span class="fc" id="L10">        appProps.get(&quot;key1&quot;);</span>
+<span class="fc" id="L11">        appProps.put(&quot;key1&quot;, &quot;value 1&quot;);</span>
+<span class="fc" id="L12">        appProps.put(&quot;key2&quot;, &quot;value 2&quot;);</span>
+<span class="fc" id="L13">        appProps.put(&quot;key3&quot;, &quot;value 3&quot;);</span>
+<span class="fc" id="L14">        return appProps.get(key);</span>
     }
 
 }

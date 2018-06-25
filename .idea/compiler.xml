@@ -6,11 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="app" />
+        <module name="app-hello" />
+        <module name="hello-world" />
         <module name="test-math" />
         <module name="test-string" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app" target="1.8" />
+      <module name="app-hello" target="1.8" />
+      <module name="hello-world" target="1.8" />
+      <module name="sample-java" target="1.5" />
+      <module name="simple-java-app" target="1.8" />
       <module name="test-jacoco" target="1.8" />
       <module name="test-math" target="1.8" />
       <module name="test-string" target="1.8" />

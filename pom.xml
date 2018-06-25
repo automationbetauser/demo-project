@@ -4,13 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>test-jacoco</groupId>
-    <artifactId>test-jacoco</artifactId>
+    <groupId>demo-project</groupId>
+    <artifactId>demo-project</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>test-math</module>
         <module>test-string</module>
+        <module>hello-world</module>
+        <module>app</module>
+        <module>app-hello</module>
+        <module>simple-java-app</module>
     </modules>
 
     <properties>

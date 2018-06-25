@@ -71,14 +71,14 @@
 <p>FindBugs version: 3.0.1</p>
 <p>Code analyzed:</p>
 <ul>
-<li>C:\Users\apriyank\codebase\test-jacoco\test-string\target\classes</li>
+<li>C:\Users\apriyank\codebase\demo-project\test-string\target\classes</li>
 </ul>
 <p>
 <br />
 <br />
 </p>
 <h2>Metrics</h2>
-<p>9 lines of code analyzed,
+<p>10 lines of code analyzed,
 	in 1 classes, 
 	in 1 packages.</p>
 <table cellspacing="2" cellpadding="5" width="500">
@@ -94,18 +94,18 @@
 </tr>
 <tr class="tablerow1">
 <td>Medium Priority Warnings</td>
-<td align="right" />
-<td align="right">0.00</td>
+<td align="right">1</td>
+<td align="right">100.00</td>
 </tr>
 <tr class="$totalClass">
 <td>
 <b>Total Warnings</b>
 </td>
 <td align="right">
-<b>0</b>
+<b>1</b>
 </td>
 <td align="right">
-<b>0.00</b>
+<b>100.00</b>
 </td>
 </tr>
 </table>
@@ -119,6 +119,9 @@
 <h2>Contents</h2>
 <ul>
 <li>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</li>
+<li>
 <a href="#Details">Details</a>
 </li>
 </ul>
@@ -130,17 +133,63 @@
 </tr>
 <tr class="tablerow0">
 <td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
 <b>Total</b>
 </td>
 <td align="right">
-<b>0</b>
+<b>1</b>
 </td>
 </tr>
 </table>
 <h1>Warnings</h1>
 <p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N100A2');" class="tablerow1">
+<td>
+<span class="priority-2">RV</span>
+</td>
+<td>Return value of java.util.Map.get(Object) ignored, but method has no side effect</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N100A2">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Bug type RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT (click for details)</a>
+<br />In class com.string.operation.MyAssertNotSame<br />In method com.string.operation.MyAssertNotSame.getPropValue(String)<br />Called method java.util.Map.get(Object)<br />At MyAssertNotSame.java:[line 10]</p>
+</td>
+</tr>
+</table>
 <h1>
 <a name="Details">Details</a>
 </h1>
-</body>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT: Return value of method without side effect is ignored</a>
+</h2>
+
+<p>This code calls a method and ignores the return value. However our analysis shows that
+the method (including its implementations in subclasses if any) does not produce any effect 
+other than return value. Thus this call can be removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<p>- The method is designed to be overridden and produce a side effect in other projects which are out of the scope of the analysis.</p>
+<p>- The method is called to trigger the class loading which may have a side effect.</p>
+<p>- The method is called just to get some exception.</p>
+<p>If you feel that our assumption is incorrect, you can use a @CheckReturnValue annotation
+to instruct FindBugs that ignoring the return value of this method is acceptable.
+</p>
+
+    </body>
 </html>

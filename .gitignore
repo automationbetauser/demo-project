@@ -2,3 +2,13 @@
 .gitignore
 .idea/vcs.xml
 src/main/resources/
+app/target/
+hello-world/src/
+hello-world/target/
+sample-java/src/main/resources/
+sample-java/target/
+target/findbugs/
+test-math/target/generated-sources/
+test-math/target/generated-test-sources/
+test-string/target/generated-sources/
+test-string/target/generated-test-sources/
