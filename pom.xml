@@ -15,6 +15,7 @@
         <module>app</module>
         <module>app-hello</module>
         <module>simple-java-app</module>
+        <module>sample-app</module>
     </modules>
 
     <properties>
