@@ -1,7 +1,7 @@
 package com.hello.world;
 
 /**
- * Simple class that says "Hello!....."
+ * Simple class that says "Hello!......."
  */
 public class Hello {
 
