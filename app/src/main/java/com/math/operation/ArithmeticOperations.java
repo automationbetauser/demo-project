@@ -4,7 +4,7 @@ public class ArithmeticOperations {
 
     public Integer add(Integer a, Integer b)
     {
-        //add 2 numbers. 
+        //add. 
         return a+b;
     }
 
