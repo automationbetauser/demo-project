@@ -10,7 +10,7 @@ public class ArithmeticOperationsTest {
     {
         ArithmeticOperations operations = new ArithmeticOperations();
         Integer actual = operations.add(2, 6);
-        Integer expected = 18;
+        Integer expected = 8;
         assertEquals(expected, actual);
     }
 
