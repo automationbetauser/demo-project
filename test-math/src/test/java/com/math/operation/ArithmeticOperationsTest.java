@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class ArithmeticOperationsTest {
 
-    private boolean isSuccess = true;
+    private boolean isSuccess = false;
 
     @Test
     public void testAdd()
@@ -13,6 +13,15 @@ public class ArithmeticOperationsTest {
         ArithmeticOperations operations = new ArithmeticOperations();
         Integer actual = operations.add(2, 6);
         Integer expected = isSuccess ? 8 : 18;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testAddition()
+    {
+        ArithmeticOperations operations = new ArithmeticOperations();
+        Integer actual = operations.add(-5, 20);
+        Integer expected = isSuccess ? 15 : 18;
         assertEquals(expected, actual);
     }
 
@@ -25,6 +34,14 @@ public class ArithmeticOperationsTest {
     }
 
     @Test
+    public void testSubtraction() {
+        ArithmeticOperations operations = new ArithmeticOperations();
+        Integer actual = operations.sub(-30, 20);
+        Integer expected = isSuccess ? -50 : -10;
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void testMul() {
         ArithmeticOperations operations = new ArithmeticOperations();
         Integer actual = operations.mul(10, 6);
@@ -33,10 +50,26 @@ public class ArithmeticOperationsTest {
     }
 
     @Test
+    public void testMultiplication() {
+        ArithmeticOperations operations = new ArithmeticOperations();
+        Integer actual = operations.mul(-10, -20);
+        Integer expected = isSuccess ? 200 : -200;
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void testDiv() {
         ArithmeticOperations operations = new ArithmeticOperations();
         Integer actual = operations.div(10, 5);
         Integer expected = isSuccess ? 2 : 4;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testDivision() {
+        ArithmeticOperations operations = new ArithmeticOperations();
+        Integer actual = operations.div(24, 5);
+        Integer expected = isSuccess ? 4 : 5;
         assertEquals(expected, actual);
     }
 
