@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!--<module>test-math</module>
+        <module>test-math</module>
         <module>test-string</module>
         <module>hello-world</module>
         <module>app</module>
         <module>app-hello</module>
-        <module>sample-app</module>-->
+        <module>sample-app</module>
         <module>simple-java-app</module>
     </modules>
 
