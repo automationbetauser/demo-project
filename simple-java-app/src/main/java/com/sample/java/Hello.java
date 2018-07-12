@@ -3,7 +3,7 @@ package com.sample.java;
 import java.io.PrintStream;
 
 /**
- * Simple class that says "Hello!!'"
+ * Simple class that says "Hello!!!'"
  */
 public class Hello {
 
