@@ -13,11 +13,4 @@ public class ArithmeticOperationsTest {
         Integer expected = 8;
         assertEquals(expected, actual);
     }
-
-    @Test
-    public void testEvenOddNumber(){
-        ArithmeticOperations meo = new ArithmeticOperations();
-        assertEquals("10 is a even number", true, meo.isEvenNumber(10));
-    }
-
 }
