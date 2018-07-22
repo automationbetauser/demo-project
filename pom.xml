@@ -11,10 +11,8 @@
     <modules>
         <module>test-math</module>
         <module>test-string</module>
-        <module>hello-world</module>
         <module>app</module>
         <module>app-hello</module>
-        <module>sample-app</module>
         <module>simple-java-app</module>
     </modules>
 
@@ -39,7 +37,7 @@
                 <artifactId>findbugs-maven-plugin</artifactId>
                 <version>3.0.4</version>
                 <configuration>
-                    <effort>Max</effort>
+                    <effort>min</effort>
                     <failOnError>false</failOnError>
                     <threshold>Low</threshold>
                     <xmlOutput>true</xmlOutput>
@@ -55,25 +53,25 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>xml-maven-plugin</artifactId>
                 <version>1.0</version>
                 <configuration>
                     <transformationSets>
                         <transformationSet>
-                            <!-- Configures the source directory of XML files. -->
+                            &lt;!&ndash; Configures the source directory of XML files. &ndash;&gt;
                             <dir>${project.build.directory}/findbugs</dir>
-                            <!-- Configures the directory in which the FindBugs report is written.-->
+                            &lt;!&ndash; Configures the directory in which the FindBugs report is written.&ndash;&gt;
                             <outputDir>${project.build.directory}/findbugs</outputDir>
-                            <!-- Selects the used stylesheet. -->
-                            <!-- <stylesheet>fancy-hist.xsl</stylesheet> -->
+                            &lt;!&ndash; Selects the used stylesheet. &ndash;&gt;
+                            &lt;!&ndash; <stylesheet>fancy-hist.xsl</stylesheet> &ndash;&gt;
                             <stylesheet>default.xsl</stylesheet>
-                            <!--<stylesheet>plain.xsl</stylesheet>-->
-                            <!--<stylesheet>fancy.xsl</stylesheet>-->
-                            <!--<stylesheet>summary.xsl</stylesheet>-->
+                            &lt;!&ndash;<stylesheet>plain.xsl</stylesheet>&ndash;&gt;
+                            &lt;!&ndash;<stylesheet>fancy.xsl</stylesheet>&ndash;&gt;
+                            &lt;!&ndash;<stylesheet>summary.xsl</stylesheet>&ndash;&gt;
                             <fileMappers>
-                                <!-- Configures the file extension of the output files. -->
+                                &lt;!&ndash; Configures the file extension of the output files. &ndash;&gt;
                                 <fileMapper
                                         implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>.html</targetExtension>
@@ -83,7 +81,7 @@
                     </transformationSets>
                 </configuration>
                 <executions>
-                    <!-- Ensures that the XSLT transformation is run when the project is compiled. -->
+                    &lt;!&ndash; Ensures that the XSLT transformation is run when the project is compiled. &ndash;&gt;
                     <execution>
                         <phase>compile</phase>
                         <goals>
@@ -98,7 +96,7 @@
                         <version>2.0.1</version>
                     </dependency>
                 </dependencies>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
