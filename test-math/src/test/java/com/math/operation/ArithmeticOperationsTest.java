@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class ArithmeticOperationsTest {
 
-    private boolean isSuccess = true;
+    private boolean isSuccess = false;
 
     //@Test
     public void testAdd()
