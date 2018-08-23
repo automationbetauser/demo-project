@@ -7,7 +7,7 @@ public class ArithmeticOperationsTest {
 
     private boolean isSuccess = false;
 
-    //@Test
+    @Test
     public void testAdd()
     {
         ArithmeticOperations operations = new ArithmeticOperations();
