@@ -82,14 +82,12 @@ public class ArithmeticOperationsTest {
         assertEquals(expected, actual);
     }
 
-    @Ignore
     @Test
     public void testEvenOddNumber(){
         ArithmeticOperations meo = new ArithmeticOperations();
         assertEquals("10 is a even number", true, meo.isEvenNumber(isSuccess ? 10 : 13));
     }
 
-    @Ignore
     @Test
     public void testForNull(){
         ArithmeticOperations meo = isSuccess ? new ArithmeticOperations() : null;
