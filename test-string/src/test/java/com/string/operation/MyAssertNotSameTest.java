@@ -9,6 +9,6 @@ public class MyAssertNotSameTest {
     public void isSameReferenceTest(){
 
         MyAssertNotSame msnt = new MyAssertNotSame();
-        assertNotSame(msnt.getPropValue("key1"), msnt.getPropValue("key2"));
+        assertNotSame(msnt.getPropValue("key1"), msnt.getPropValue("key1"));
     }
 }

@@ -12,7 +12,7 @@ public class ArithmeticOperationsTest {
     {
         ArithmeticOperations operations = new ArithmeticOperations();
         Integer actual = operations.add(2, 6);
-        Integer expected = isSuccess ? 8 : 18;
+        Integer expected = isSuccess ? 9 : 18;
         assertEquals(expected, actual);
     }
 }
