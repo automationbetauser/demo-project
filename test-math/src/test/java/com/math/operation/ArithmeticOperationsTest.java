@@ -11,8 +11,8 @@ public class ArithmeticOperationsTest {
     public void testAdd()
     {
         ArithmeticOperations operations = new ArithmeticOperations();
-        Integer actual = operations.add(2, 6);
-        Integer expected = isSuccess ? 8 : 18;
+        Integer actual = operations.add(3, 6);
+        Integer expected = isSuccess ? 9 : 18;
         assertEquals(expected, actual);
     }
 }
